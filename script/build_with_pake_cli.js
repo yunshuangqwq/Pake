@@ -72,7 +72,7 @@ const main = async () => {
         iconFile = 'icon.icns';
         break;
       case 'win32':
-        iconFile = 'icon.ico';
+        iconFile = 'mccytxwiki.ico';
         break;
       default:
         console.log("Unable to detect your OS system, won't download the icon!");
