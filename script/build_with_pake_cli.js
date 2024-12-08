@@ -48,6 +48,9 @@ if (process.platform === 'win32' || process.platform === 'linux') {
   params = `${params} --show-system-tray`;
 }
 
+// 直接在代码中设置安装程序的语言为中文
+params = `${params} --installer-language zh-CN`;
+
 const downloadIcon = async iconFile => {
   try {
     const response = await axios.get(process.env.ICON, { responseType: 'arraybuffer' });
